@@ -1,17 +1,20 @@
 #include <stdio.h>
+
 /**
-* main - print numbers 0 to 9
-* description - use variable int
-* Return: Always 0 (Success)
-*/
+  * main - Prints the numbers since 0 to 9
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-int c;
-c = 0;
-while ('0' + c <= '9')
-{
-putchar('0' + c);
-c++;
+	int n;
+
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
+
+	putchar('\n');
+
+	return (0);
 }
-putchar('\n');
-retu
