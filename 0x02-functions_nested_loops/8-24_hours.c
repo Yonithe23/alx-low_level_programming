@@ -1,29 +1,34 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
- * jack_bauer -  function that prints every minute of the day of Jack Bauer
- * starting from 00:00 to 23:59.
- * Return: nothing.
+ *jack_bauer-prints all minutes in a day from 00:00
+ *
+ *Return:0 if succeesful.
  */
+
 
 void jack_bauer(void)
 {
-	int x = 0;
-	int j = 0;
+	int i, j, k, m;
 
-	while (x <= 23)
+	for (i = 0; i <= 2; i++)
 	{
-		j = 0;
-		while (j <= 59)
+		for (j = 0; j <= 9; j++)
 		{
-			_putchar((x / 10) + '0');
-			_putchar((x % 10) + '0');
-			_putchar(':');
-			_putchar((j / 10) + '0');
-			_putchar((j % 10) + '0');
-			_putchar('\n');
-			j += 1;
+			for (k = 0; k <= 5; k++)
+			{
+				for (m = 0; m <= 9; m++)
+				{
+					if (i == 2 && j > 3)
+					{break;
+					}
+					_putchar(i + '0');
+					_putchar(j + '0');
+					_putchar(':');
+					_putchar(k + '0');
+					_putchar(m + '0');
+					_putchar('\n');
+				}
+			}
 		}
-		x += 1;
 	}
 }
