@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * main -  prints  , followed by a new line
- * Return: Always 0 (Success)
- */
-
+ * main - entry block
+ * @void: no argument
+ * Return: 0
+ **/
 int main(void)
 {
-	char str[] = "_putchar";
+	char yonas[] = "_putchar";
+
 	int c;
 
 	for (c = 0; c < 8; c++)
 	{
-		_putchar(str[c]);
-		
+		_putchar(yonas[c]);
 	}
 	_putchar('\n');
 	return (0);
